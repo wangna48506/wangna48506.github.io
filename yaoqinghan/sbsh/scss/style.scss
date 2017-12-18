@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body{
+    background-color: #000;
+    color: #fff;
+}
+//Duang
+@keyframes shark{
+    0%{
+        margin: 0;
+    }
+    10%{
+        margin: -30px 0 0 -30px;
+    }
+    20%{
+        margin: -30px -30px 0 0;
+    }
+    30%{
+        margin: 0 -30px -30px 0;
+    }
+    40%{
+        margin: 0 0 -30px -30px;
+    }
+    50%{
+        margin: 0 0 -30px -30px;
+    }
+    60%{
+        margin: -10px 0 0 -10px;
+    }
+    70%{
+        margin: -10px -10px 0 0;
+    }
+    80%{
+        margin: 0  -10px -10px 0;
+    }
+    90%{
+        margin: 0 0 -10px -10px;
+    }
+}
+html{
+//    animation: shark 1s;
+    overflow-x: hidden;
+}
+
+#banner{
+    background: url(../img/bg1.jpg) no-repeat center;
+    background-color: #000;
+    color: #fff;
+    height: 900px;
+    .center{
+        text-align: center;
+        padding: 280px 0px;
+    }
+    .title{
+        margin-bottom: 80px;
+        p{
+         font-size: 24px; 
+            margin-bottom: 20px;
+        }
+        .text{
+            height: 72px;
+//            width: 400px;
+            position: relative;
+            margin: auto;
+            margin-bottom: 20px;
+            opacity: 0;
+            div{
+                background-image: url(../img/text_left.png);
+                width: 200px;
+                height: 72px;
+                position: absolute;//绝对定位 
+                &:nth-of-type(2){
+                    background-image: url(../img/text_right.png);
+                    right:0;
+                }
+            }
+        }
+    }
+    .btn{
+        a{
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            background-color: #08b573;
+            width: 100px;
+            display: inline-block;
+            padding: 10px 0;
+            margin: 15px;
+            &:nth-of-type(2){
+                animation: color 5s infinite linear;
+            }
+        }
+    }
+}
+
+@keyframes color{
+    0%{
+        background-color: #84050e;
+    }
+    50%{
+        background-color: #08b573;
+    }
+    100%{
+        background-color: #84050e;
+    }
+}
+
+
+//旋转方块
+.comsic1{
+        width: 200px;
+        height: 150px;
+        margin: auto;
+        text-align: center;
+    h2{
+        font-size: 35px;
+    }
+    div{
+        margin: auto;
+       width: 85px;
+        height: 3px;
+        background-color: #fff;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    p{
+        font-size: 22px;
+        color: #ccc;
+    }
+}
+#act{
+    div{
+        h2{
+            margin: 5px 0px;
+        }
+        width: 300px;
+        height: 150px;
+        
+    }
+}
+.comsic-cube{
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .comsic{
+        background-image: url("../img/circle.jpg");
+        width: 700px;
+        height: 548px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .cube{
+                position: relative;
+                width: 80px;
+                height: 80px;
+                transform-style: preserve-3d;
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                text-align: center;
+                line-height: 80px;
+                color: #fff;
+                font-size: 30px;
+                animation: cube 10s infinite linear;
+            div{
+                border: 3px solid #19decd;
+                box-shadow: 0 0 80px #19decd;
+                width: 80px;
+                height: 80px;
+                position: absolute;
+            }
+            div:nth-of-type(1){
+                transform: translateY(-40px) rotateX(90deg);
+            }
+            div:nth-of-type(2){
+                transform: translateY(40px) rotateX(90deg);
+            }
+            div:nth-of-type(3){
+                transform: translateX(-40px) rotateY(90deg);
+            }
+            div:nth-of-type(4){
+                transform: translateX(40px) rotateY(90deg);
+            }
+            div:nth-of-type(5){
+                transform: translateZ(-40px);
+            }
+            div:nth-of-type(6){
+                transform: translateZ(40px);
+            }
+        }
+    }
+}
+
+@keyframes cube{
+    100%{
+        transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+    
+//图片凸起
+    
+
+
+#work{
+    margin: auto;
+    header{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    .line{
+        margin: auto;
+        width: 80px;
+        height: 5px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+}
+    .wrap{
+        transform: rotateX(45deg) rotateZ(45deg) translateX(40%) translateY(-200PX);
+        transform-style: preserve-3d;
+            ul{
+            width: 1080px;
+            margin: auto;
+                li{
+                    width: 330px;
+                    height: 230px;
+                    float: left;
+                    margin: 15px;
+                    list-style: none;
+                    position: relative;
+                    transform-style: preserve-3d;
+                    a{
+                        width: 330px;
+                        height: 230px;
+                        display: block;
+                        position: absolute;
+                    }
+                    &:hover img{
+                        transform: translateZ(100px);
+                    }
+                    &:hover div:nth-of-type(1){
+                          background-color: #ac5cfc;  
+                            transform: translateZ(75px);
+                            z-index: 3;
+                        transition: 0.5s;
+                    }
+                    &:hover div:nth-of-type(2){
+                          background-color: #5db4eb;  
+                            transform: translateZ(50px);
+                            z-index: 2;
+                        transition: 0.5s;
+                    }
+                    &:hover div:nth-of-type(3){
+                          background-color: #5debb4;  
+                            transform: translateZ(25px);
+                            z-index: 1;
+                        transition: 0.5s;
+                    }
+                    img{
+                        width: 330px;
+                        height: 230px;
+                        position: absolute;
+                        z-index: 4;
+                        transition: 0.5s;
+                    }
+                    div{
+                        width: 330px;
+                        height: 230px;
+                        position: absolute;
+                        opacity: .5;
+                        transition: .5s;
+                }
+            }
+        }
+    }
+}
+
+
+.footer{
+    clear: both;
+    header{
+        width: 400px;
+        height: 200px;
+        margin: auto;
+        text-align: center;
+        h2{
+            margin-bottom: 20px;
+        }
+    }
+        #foot{
+                width: 800px;
+                margin: auto;
+            .footer{
+                width: 800px;
+                height: 800px;
+                background-image: url(../img/blackhole.png);
+                transform-style: preserve-3d;
+                animation: foot 10s infinite linear;
+            }
+            .footer1{
+                position: relative;
+                bottom: 800px;
+                left: 0;
+                
+            div{
+                width: 150px;
+                height: 80px;
+                
+            }
+            div:nth-of-type(1){
+                position: relative;
+                top: 330px;
+                left:50px;
+            }
+            div:nth-of-type(2){
+                position: relative;
+                left: 370px;
+                bottom: 50px;
+            }
+            div:nth-of-type(3){
+                position: relative;
+                left: 650px;
+                top: 165px;
+            }
+            div:nth-of-type(4){
+                position: relative;
+                left: 380px;
+                top: 400px;
+            }
+                span{
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    border: 1px solid #fff;
+                    border-radius: 15px;
+                }
+                span:nth-of-type(1){
+                    position: relative;
+                    right: 35px;
+                    top: 50px;
+                }
+            } 
+        }
+    .ter{
+        a{
+            color: #fff;
+            font-size: 22px;
+            display: block;
+            width: 130px;
+            margin: auto;
+            text-decoration: none;
+            padding: 10px 0px;
+            text-align: center;
+            background-color: aqua;
+            position: relative;
+            bottom: 200px;
+        }
+    }
+    
+}
+
+@keyframes foot{
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+    
+    
+    
+    
+
