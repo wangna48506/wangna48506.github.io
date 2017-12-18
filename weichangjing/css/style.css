@@ -1,0 +1,401 @@
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+
+h2{
+    font-family: "迷你简菱心";
+}
+
+
+
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      background: #f2e2d5;
+        position: relative;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+        
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+/*滑动的箭头*/
+.swiper-button-next{
+    position: absolute;
+    top: auto;
+    bottom: 2%;
+    left: 50%;
+    margin-left: -13.5px;
+    animation: next 1s linear infinite;
+    color: #fff;
+}
+@keyframes next{
+    0%{
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+    }
+    100%{
+        position: absolute;
+        bottom: 6%;
+        left: 50%;
+        opacity: 0;
+    }
+}
+/*滑动的箭头*/
+
+.swiper_time{
+    position: absolute;
+    top: auto;
+    bottom:10%;
+    left:10%;
+}
+.swiper_time img{
+    width: 100%;
+}
+.swiper_img{
+    position: absolute;
+    top: auto;
+    bottom:10%;
+    left:60%;
+}
+
+.swiper_img img{
+    opacity: 0.3;
+    width: 70%;
+}
+
+.dingwei{
+    position: absolute; 
+    top:19%;
+    left: 50%;
+}
+.we{
+    font-family: "迷你简雪峰";
+    font-size: 35px;
+}
+.jl{
+    font-family: "华文行楷";
+    font-size: 23px;
+}
+
+/*音乐播放*/
+.music{
+    position: absolute;
+    right: 3%;
+    top: 0;
+    z-index: 1;
+}
+.music_off{
+    position: absolute;
+    right: 0;
+    top:;
+    animation: mus 1s linear infinite;
+}
+.gif{
+    position: absolute;
+    right:-20px;
+    top:-20px;
+}
+
+
+@keyframes mus{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*音乐播放*/
+
+
+.love{
+    font-size: 20px;
+    text-align: left;
+    color: #553e36;
+}
+.top_heart img{
+    width: 10%;
+}
+/*心形动图*/
+.heart img{
+    width:7%;
+    position: absolute;
+    top: 6%;
+    left:0%;
+    transform: rotate(-45deg);
+    animation: heart 1s linear infinite;
+}
+.heart1 img{
+    width: 5%;
+    position: absolute;
+    top: 14%;
+    left: 75%;
+    transform: rotate(25deg);
+    animation: heart1 1s linear infinite;
+}
+.heart2 img{
+    width:3%;
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    transform: rotate(25deg);
+    animation: heart2 1s linear infinite;
+}
+.heart3 img{
+    width: 7%;
+    position: absolute;
+    top:8%;
+    left: 50%;
+    transform: rotate(-25deg);
+    animation: heart3 1s linear infinite;
+}
+.heart4 img{
+    width:15px;
+    animation: heart4 1s linear infinite;
+}
+.main_jl{
+    height:31px;
+    display: inline-block;
+}
+@keyframes heart{
+    0{
+        width:7%;
+    }
+    50%{
+        width: 10%;
+    }
+    100%{
+        width: 7%;
+    }
+}
+@keyframes heart1{
+    0{
+        width:5%;
+    }
+    50%{
+        width: 7%;
+    }
+    100%{
+        width: 5%;
+    }
+}
+@keyframes heart2{
+    0{
+        width:3%;
+    }
+    50%{
+        width: 5%;
+    }
+    100%{
+        width: 3%;
+    }
+}
+@keyframes heart3{
+    0{
+        width:7%;
+    }
+    50%{
+        width: 9%;
+    }
+    100%{
+        width: 7%;
+    }
+}
+@keyframes heart4{
+    0{
+        width:15px;
+    }
+    50%{
+        width: 25px;
+    }
+    100%{
+        width:15px;
+    }
+}
+/*心形动图*/
+
+/*花边框*/
+/*第三页*/
+.slide2_main{
+    width: 85%;
+    height:90%;
+    position: absolute;
+    left: -30%;
+    top: 28%;
+}
+.slide2_main img{
+    width: 90%;
+    height: 95%;
+    position: absolute;
+    top: -20%;
+    bottom: auto;
+
+}
+.main_love{
+    position: absolute;
+    top: 17%;
+    left: 27%;
+    width: 50%;
+    color: #553e36;
+}
+.main_love p{
+    font-family: "华文行楷";
+}
+.main_love div{
+    font-size: 12px;
+    text-align: left;
+    font-family: "方正行楷简体";
+    margin: 10px 0;
+}
+
+/*第四页*/
+.swiper_lide4{
+    position: absolute;
+    top: 15%;
+    left: 19%;
+    width:62%;
+    color: #553e36;
+}
+.swiper_lide4 h2{
+    margin: 0;
+}
+.swiper_lide4 p{
+    font-size: 14px;
+    font-family: "华文行楷";
+    margin-bottom: 20px;
+}
+.swiper_lide4 div{
+    width: 50%;
+    float: left;
+}
+.swiper_lide4 img{
+    width: 89%;
+    margin: 2%;
+}
+/*花边框*/
+
+/*第六页*/
+
+.swiper_lide6{
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    width: 220px;
+    color: #553e36;
+}
+.swiper_lide6 p{
+    font-size: 15px;
+    font-family: "华文行楷";
+    margin-bottom: 20px;
+}
+.swiper_lide6 div{
+    font-size: 14px;
+    font-family: "华文行楷";
+    text-align: left;
+}
+.slide6_footer p{
+    text-align: center;
+}
+/*第六页*/
+
+/*第七页*/
+
+.footer{
+    position: absolute;
+    top: 15%;
+    left: 21%;
+    width: 220px;
+    color: #553e36;
+}
+.footer p{
+    font-family: "华文行楷";
+}
+.footer div{
+    font-size: 16px;
+    text-align: center;
+    font-family: "方正行楷简体";
+}
+.footer_footer{
+    margin: 30px 0;
+}
+.slide6_footer h3{
+    text-align: center;
+    font-size: 18px;
+}
+/*第七页*/
+
+
+/*第八页*/
+
+.footer2 input{
+    padding: 8px 3px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.submit{
+    width: 175px;
+    background-color: #fff;
+    padding: 8px 3px;
+    border:1px dashed #553e36;
+    border-radius: 3px;
+    color: #553e36;
+    margin: 10px 0;
+}
+/*第八页*/
+
+
+@media(max-width:1000px){
+    .swiper_time img{
+        width: 50%;
+    }
+    .swiper_img img{
+        width: 50%;
+    }
+    .swiper_time{
+        position: relative;
+        top: auto;
+        bottom: -25%;
+        left:-28%;
+    }
+    .we{
+        font-size: 25px;
+    }
+    .dingwei{
+    position: absolute; 
+    top:19%;
+    left: 40%;
+    
+}
+    .dingwei .love{
+        font-size: 12px;
+    }
+}
